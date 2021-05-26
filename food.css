@@ -11,9 +11,9 @@ p{
     font-weight: 300;
     color: #111;
 }
-body{
+/* body{
     min-width: 1000px;
-}
+} */
 .banner{
     position: relative;
     width: 100%;
@@ -344,7 +344,7 @@ section{
 }
 @media (max-width: 991px){
     header , header.sticky{
-        padding: 15px 20px;
+        padding: 10px 20px;
     }
     header .nav{
         display: none;
@@ -369,7 +369,7 @@ section{
     .sticky .menuToggle{
         filter: invert(1);
     }
-    .nav.active{
+    header .nav.active{
         padding-right: 13px;
         width: 18%;
         /* height: calc(100% - 68px); */
@@ -401,7 +401,6 @@ section{
         color: white;
     }
     .row{
-        
         flex-direction: column;
     }
     .row .col50{
@@ -412,20 +411,20 @@ section{
         height: 300px;
         margin-top: 20px;
     }
-    .menu .content{
-        display: flex;
-        flex-direction: column;
+    .menu .content{    
+        justify-content: center;
+        flex-direction: row-reverse; 
         margin-top: 20px;
-        align-items: center;
     }
     .menu .content .box{
         margin: 10px;
     }
     .menu .content .box .imgBx{
-        
         height: 260px;
     }
-    
+    .title{
+        text-align: center;
+    }
     .titleText{
         color: black;
         font-size: 1.8em;
