@@ -375,7 +375,7 @@ section{
     }
     header .nav.active{
         padding-right: 13px;
-        width: 18%;
+        width: 160px;
         /* height: calc(100% - 68px); */
         position: absolute;
         top: 68px;
@@ -475,5 +475,33 @@ section{
         width: 100%;
         margin: 15px;
         margin-left: 2px;
+    }
+    header .nav li a {
+        font-size: 1.2em;
+    }
+    header .nav.active {
+        top: 47px;
+    }
+    .sticky .nav.active {
+        background: rgba(255, 255, 255, 0.9);
+    }
+    header .nav.active {
+        width: 120px;
+    }
+    .banner .content p {
+        font-size: 0.75em;
+    }
+    
+}
+
+@media (max-width: 330px){
+    header .nav li a {
+        font-size: 0.9em;
+    }
+    header .nav li {
+        margin: 0;
+    }
+    header .nav.active {
+        width: 95px;
     }
 }
