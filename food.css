@@ -28,7 +28,6 @@ p{
 .banner .content{
     max-width:  900px;
     text-align: center;
-    position: relative;
 }
 .banner .content h2{
     font-size: 5em;
@@ -38,7 +37,6 @@ p{
     font-size: 1em;
     color: white;
 }
-
 .btn{
     font-size: 1em;
     color: #fff;
@@ -50,7 +48,6 @@ p{
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
-
 }
 
 .btn:hover{
@@ -118,7 +115,6 @@ section{
     justify-content: space-between;
 }
 .row .col50{
-    position: relative;
     width: 48%;
 }
 .titleText{
@@ -458,10 +454,18 @@ section{
     .contact{
         height: auto;
     }
-    @media (max-width: 480px){
-        .banner .content h2{
-            font-size: 2em;
-            color: white;
-        }
+    
+}
+
+
+@media (max-width: 480px){
+    .banner .content h2{
+        font-size: 2em;
+        color: white;
+    }
+    .expert .content .box {
+        width: 100%;
+        margin: 15px;
+        margin-left: 2px;
     }
 }
